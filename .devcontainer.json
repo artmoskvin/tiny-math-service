@@ -2,4 +2,11 @@
 	"name": "Tiny math service",
 	"image": "mcr.microsoft.com/devcontainers/python:3.12-bullseye",
 	"onCreateCommand": "pip install poetry && poetry install",
+	"customizations": {
+		"hide": {
+			"tasks": [
+				{"alias": "test", "command": "poetry run pytest"},
+				{"alias": "run", "command": "poetry run uvicorn main:main"}
+			]
+		}
 }
