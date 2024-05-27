@@ -5,8 +5,15 @@
 	"customizations": {
 		"hide": {
 			"tasks": [
-				{"alias": "test", "command": "poetry run pytest"},
-				{"alias": "run", "command": "poetry run uvicorn main:main"}
+				{
+					"alias": "test",
+					"command": "poetry run pytest"
+				},
+				{
+					"alias": "run",
+					"command": "poetry run uvicorn main:main"
+				}
 			]
 		}
+	}
 }
