@@ -1,0 +1,5 @@
+{
+	"name": "Tiny math service",
+	"image": "mcr.microsoft.com/devcontainers/python:3.12-bullseye",
+	"onCreateCommand": "pip install poetry && poetry install",
+}
