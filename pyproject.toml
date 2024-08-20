@@ -21,3 +21,6 @@ build-backend = "poetry.core.masonry.api"
 include = ["my_tiny_service", "tests"]
 venvPath = "."
 venv = ".venv"
+
+[tool.pytest.ini_options]
+addopts = "-p no:warnings"
